@@ -1,0 +1,19 @@
+{
+    "name": "Nigeram Dev Container",
+    "image": "python:3.9",  // Or the Python version you're using
+    "features": {},
+    "customizations": {
+       "vscode": {
+          "settings": {
+             "terminal.integrated.defaultProfile.linux": "bash"
+          },
+          "extensions": [
+             "ms-python.python",
+             "ms-toolsai.jupyter",
+             "eamodio.gitlens"
+          ]
+       }
+    },
+    "postCreateCommand": "pip install -r requirements.txt"
+ }
+ 
